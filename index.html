@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Alquiler de camionetas blindadas con conductor | 2Group</title>
+<meta name="description" content="Alquiler de camionetas blindadas con conductor certificado y cobertura nacional. Cotice por WhatsApp o en línea.">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#041D2C">
+<link rel="icon" href="assets/logo-azul.svg" type="image/svg+xml">
+<script>
+  if (matchMedia('(prefers-reduced-motion: no-preference)').matches) {
+    document.documentElement.classList.add('anima');
+  }
+</script>
+<link rel="preload" href="assets/fuentes/Merriweather-Light.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/img/vidrio-horizontal.avif" as="image" type="image/avif" media="(orientation: landscape)" fetchpriority="high">
+<link rel="preload" href="assets/img/vidrio-vertical.avif" as="image" type="image/avif" media="(orientation: portrait)" fetchpriority="high">
+<link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="icono-whatsapp" viewBox="0 0 24 24">
+    <path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+  </symbol>
+</svg>
+
+<header class="barra">
+  <a class="barra__logo" href="#inicio" aria-label="2Group, volver al inicio">
+    <img src="assets/logo-blanco.svg" width="1080" height="1052" alt="">
+  </a>
+  <nav class="barra__acciones" aria-label="Contacto">
+    <a class="boton boton--claro" href="#cotizar">Cotizar</a>
+    <a class="boton boton--cielo" href="#cotizar" data-whatsapp>
+      <svg class="boton__icono" aria-hidden="true"><use href="#icono-whatsapp"/></svg>
+      WhatsApp
+    </a>
+  </nav>
+</header>
+
+<main id="inicio">
+
+  <section class="vidrio">
+    <div class="vidrio__fijo">
+      <picture class="foto foto--a">
+        <source media="(orientation: portrait)" type="image/avif" srcset="assets/img/vidrio-vertical.avif">
+        <source media="(orientation: portrait)" type="image/webp" srcset="assets/img/vidrio-vertical.webp">
+        <source type="image/avif" srcset="assets/img/vidrio-horizontal.avif">
+        <img src="assets/img/vidrio-horizontal.webp" width="2200" height="1375" fetchpriority="high" decoding="async"
+             alt="Canto de un vidrio laminado visto de cerca, con sus capas iluminadas.">
+      </picture>
+
+      <canvas class="lienzo" aria-hidden="true"></canvas>
+
+      <div class="portada">
+        <h1>Alquiler de camionetas blindadas con conductor</h1>
+        <p class="portada__apoyo">Cobertura nacional, con conductor certificado y un protocolo pensado para la discreción.</p>
+        <div class="portada__acciones">
+          <a class="boton boton--cielo" href="#cotizar" data-whatsapp>
+            <svg class="boton__icono" aria-hidden="true"><use href="#icono-whatsapp"/></svg>
+            WhatsApp
+          </a>
+          <a class="boton boton--claro" href="#cotizar">Cotizar</a>
+        </div>
+        <a class="portada__pista" href="#modalidad">
+          <span>Mirar a través del vidrio</span>
+          <span class="portada__flecha" aria-hidden="true"></span>
+        </a>
+      </div>
+
+      <picture class="foto foto--b">
+        <source media="(orientation: portrait)" type="image/avif" srcset="assets/img/conductor-vertical.avif">
+        <source media="(orientation: portrait)" type="image/webp" srcset="assets/img/conductor-vertical.webp">
+        <source type="image/avif" srcset="assets/img/conductor-horizontal.avif">
+        <img src="assets/img/conductor-horizontal.webp" width="2000" height="1250" fetchpriority="low" decoding="async"
+             alt="Conductor de traje, de espaldas, abre la puerta trasera de una camioneta blanca.">
+      </picture>
+
+      <div class="revelado" id="modalidad">
+        <h2>Conductor certificado, en todo el país.</h2>
+        <p>Sin conductor: solo para empresas, con contrato.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="protocolo" aria-labelledby="titulo-protocolo">
+    <div class="protocolo__fijo">
+      <div class="protocolo__texto">
+        <h2 id="titulo-protocolo">Lo que no se ve también se cuida.</h2>
+        <ul class="temas">
+          <li class="activo">Cómo operamos</li>
+          <li>Perfil de los conductores</li>
+          <li>Confidencialidad de la información del viaje</li>
+        </ul>
+        <p class="protocolo__cierre">Los datos de su viaje solo los conoce quien opera su servicio.</p>
+      </div>
+
+      <div class="hoja" data-ui>
+        <div class="hoja__cabeza">
+          <img src="assets/logo-azul.svg" width="1080" height="1052" alt="" loading="lazy">
+          <div>
+            <p class="hoja__titulo">Orden de servicio</p>
+            <p class="hoja__nota">Documento de ejemplo</p>
+          </div>
+        </div>
+        <dl class="hoja__filas">
+          <div><dt>Servicio</dt><dd>Camioneta blindada con conductor</dd></div>
+          <div><dt>Pasajero</dt><dd><span>Nombre y cargo</span><i class="tacha"></i></dd></div>
+          <div><dt>Empresa</dt><dd><span>Razón social</span><i class="tacha"></i></dd></div>
+          <div><dt>Recogida</dt><dd><span>Dirección y hora</span><i class="tacha"></i></dd></div>
+          <div><dt>Destino</dt><dd><span>Ciudad y punto de llegada</span><i class="tacha"></i></dd></div>
+          <div><dt>Vehículo</dt><dd><span>Placa y modelo</span><i class="tacha"></i></dd></div>
+          <div><dt>Conductor</dt><dd class="clave"><i class="resalte"></i><span>Certificado</span></dd></div>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <section class="cierre" id="cotizar">
+    <h2>Cotice su camioneta blindada</h2>
+    <p>Cuéntenos ciudad, fechas y horario.</p>
+    <div class="cierre__acciones">
+      <a class="boton boton--lux" href="#cotizar" data-whatsapp>
+        <svg class="boton__icono" aria-hidden="true"><use href="#icono-whatsapp"/></svg>
+        WhatsApp
+      </a>
+    </div>
+    <p class="cierre__nota">Prototipo del efecto. Los textos son provisionales hasta recibir el contenido final, y el botón de WhatsApp espera el número oficial.</p>
+  </section>
+
+</main>
+
+<div class="accion-fija">
+  <a class="boton boton--cielo" href="#cotizar" data-whatsapp>
+    <svg class="boton__icono" aria-hidden="true"><use href="#icono-whatsapp"/></svg>
+    WhatsApp
+  </a>
+  <a class="boton boton--claro" href="#cotizar">Cotizar</a>
+</div>
+
+<script src="escena.js" defer></script>
+</body>
+</html>
